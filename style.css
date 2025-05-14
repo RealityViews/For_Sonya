@@ -1,10 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #ffafbd, #ffc3a0);
   color: #fff;
-  text-align: center;
-  padding: 40px;
   margin: 0;
+  padding: 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -12,36 +15,65 @@ body {
 }
 
 #container {
-  max-width: 400px;
-  width: 90%;
+  max-width: 90%;
+  width: 100%;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 30px;
+  padding: 25px 20px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.link-emoji {
+  font-size: 1.1em;
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 input {
-  padding: 10px;
-  width: 80%;
+  padding: 12px 10px;
+  width: 100%;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 1.1rem;
   margin-bottom: 15px;
-  font-size: 16px;
   text-align: center;
   background-color: #fff;
   color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Анимация тряски */
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 20px;
   background-color: #ff6f91;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
   transition: background-color 0.3s ease;
 }
 
@@ -50,7 +82,7 @@ button:hover {
 }
 
 .hint {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: #ffe;
   margin-bottom: 10px;
   display: block;
