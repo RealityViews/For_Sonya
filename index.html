@@ -2,10 +2,24 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Для Сони 💖</title>
+  <title>Для Сони</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="root"></div>
+  <div id="container">
+    <h1>Привет, Соня ❤️</h1>
+    <p class="hint">Введите вашу дату рождения, чтобы открыть важное сообщение.</p>
+
+    <input 
+      type="text" 
+      id="password" 
+      placeholder="16.02.2001" 
+      maxlength="10"
+      oninput="autoFormatDate(this)"
+    />
+    <button onclick="checkPassword()">Открыть</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
