@@ -72,7 +72,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-300 via-purple-400 to-indigo-600 text-gray-800">
+    <div className="min-h-screen bg-gradient-to-b from-pink-300 via-purple-400 to-indigo-600 text-gray-800 scroll-smooth">
       <div id="stars" className="fixed inset-0 overflow-hidden pointer-events-none"></div>
 
       {/* Якорная навигация */}
@@ -88,7 +88,7 @@ export default function App() {
         </a>
       </nav>
 
-      <div className="container mx-auto px-4 py-12 max-w-3xl scroll-smooth">
+      <div className="container mx-auto px-4 py-12 max-w-3xl">
 
         {/* Сообщение */}
         <section id="message-section" className="scroll-mt-24">
@@ -157,7 +157,7 @@ export default function App() {
         </div>
       </footer>
 
-      {/* Плавный скролл */}
+      {/* CSS для анимации звёзд */}
       <style jsx>{`
         html {
           scroll-behavior: smooth;
